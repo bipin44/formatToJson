@@ -1,5 +1,5 @@
 const https = require('https');
-var sourceUrl = 'https://www.demo_domain.com/uploads/Rapnet.txt'; // please replace the domain with actual source
+var sourceUrl = 'https://www.bijandiamonds.com/uploads/Rapnet.txt';
 https.get(sourceUrl, (resp) => {
     let data = '';
     resp.on('data', (chunk) => {
@@ -23,7 +23,7 @@ https.get(sourceUrl, (resp) => {
             // Push elements to list
             jsonElements.push(tmp);
         });
-        console.log(jsonElements[10]); // print the required element- "jsonElements" contains the final json o/p
+        console.log(jsonElements); // print the required element- "jsonElements" contains the final json o/p
     });
 }).on("error", (err) => {
     console.log("Please check the source url");
